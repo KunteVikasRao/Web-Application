@@ -1,0 +1,94 @@
+
+/* Optional: overlay for better readability with image backgrounds */
+.form-body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+  /* If you prefer an image instead of a gradient, use:
+  background: url('https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+  */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-container {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 1rem;
+  color: #333333;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.form-container input {
+  padding: 0.8rem;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-container input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+.form-container button {
+  background: #3498db;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.form-container button:hover {
+  background: #2980b9;
+}
+
+.form-container p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+.form-container .link {
+  color: #3498db;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.form-container .link:hover {
+  color: #2980b9;
+}
+
+.field-error {
+  color: red;
+  font-size: 0.8rem;
+  text-align: left;
+  margin: 0.2rem 0 0.5rem;
+}
+
+.page-error {
+  background: #ffcccc;
+  color: #d8000c;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
